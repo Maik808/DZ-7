@@ -48,6 +48,7 @@
                     <execution>
                         <!-- id (придумываем сами) -->
                         <id>report</id>
+                        <phase>verify</phase>
                         <goals>
                             <!-- какую цель выполняем (берём из справки) -->
                             <goal>report</goal>
@@ -66,7 +67,7 @@
                         <rule>
                             <limits>
                                 <limit>
-                                    <counter>BRANCH</counter>
+                                    <counter>INSTRUCTION</counter>
                                     <value>COVEREDRATIO</value>
                                     <minimum>100%</minimum>
                                 </limit>
